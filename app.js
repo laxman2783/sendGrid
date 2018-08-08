@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
      
   //Open a file on the server and return it's content:
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey("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");
+sgMail.setApiKey("SEND GRID API");
 const msg = {
   to: 'laxmant.thota@gmail.com',
   from: 'laxmant.thota@gmail.com',
