@@ -3,9 +3,7 @@ var fs = require('fs');
 const sgMail = require('@sendgrid/mail');
 http.createServer(function (req, res) {
     console.log("Running");
-     res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write('Hello World!');
-  
+     
   //Open a file on the server and return it's content:
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey("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");
@@ -18,5 +16,5 @@ const msg = {
 };
 sgMail.send(msg);
 console.log(sgMail.send(msg));
-res.end();
+
 }).listen(8080);
